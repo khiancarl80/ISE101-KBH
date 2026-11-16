@@ -1,11 +1,11 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+
+import AnnouncementPanel from '@/components/AnnouncementPanel';
 
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Campus Connect</Text>
-      <Text>One campus. Connected students.</Text>
-      <Text>Welcome to the Week 1 project foundation.</Text>
+      <AnnouncementPanel />
     </View>
   );
 }
@@ -13,14 +13,9 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#F1F3F6',
     alignItems: 'center',
     justifyContent: 'center',
-    padding: 24,
-    backgroundColor: '#F4F7FB',
-  },
-  title: {
-    fontSize: 28,
-    fontWeight: '700',
-    marginBottom: 12,
+    paddingVertical: 24,
   },
 });
